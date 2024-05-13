@@ -3,7 +3,7 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-.aukioloajat {
+.aukioloAjat {
     padding: 40px 60px;
     background-color: hsl(0, 0%, 40%);
     text-align: center;
