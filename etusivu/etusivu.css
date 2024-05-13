@@ -1,12 +1,16 @@
 
 body {
-    font-family: verdana, sans-serif;
+    font-family: sans-serif;
 }
 .aukioloajat {
     background-color: hsl(0, 0%, 40%);
+    text-align: center;
+}
+.tietoaMeistä {
+    text-align: center;
 }
 footer {
-    padding: 300px;
+    padding: 250px;
     width: 100%;
     position: relative;
     bottom: 0;
