@@ -1,20 +1,19 @@
 
 body {
-    height: 1300px;
     margin: 0;
     font-family: sans-serif;
 }
 .aukioloajat {
+    padding: 40px 60px;
     background-color: hsl(0, 0%, 40%);
     text-align: center;
 }
 .tietoaMeistä {
+    padding: 40px 60px;
     text-align: center;
 }
 footer {
     padding: 100px;
     width: 100%;
-    position: absolute;
-    bottom: 0;
     background-color: hsl(0, 0%, 70%);
 }
