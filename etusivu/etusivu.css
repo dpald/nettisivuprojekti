@@ -1,8 +1,14 @@
 
+body {
+    font-family: verdana, sans-serif;
+}
 .aukioloajat {
     background-color: hsl(0, 0%, 40%);
 }
-.footer {
+footer {
+    padding: 300px;
+    width: 100%;
     position: relative;
     bottom: 0;
+    background-color: hsl(0, 0%, 70%);
 }
