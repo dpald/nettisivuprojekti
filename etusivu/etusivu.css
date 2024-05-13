@@ -4,7 +4,8 @@ body {
     font-family: sans-serif;
 }
 .aukioloAjat {
-    size: 175px 250px;
+    width: 175px;
+    height: 250px;
     padding: 40px 60px;
     background-color: hsl(0, 0%, 70%);
     text-align: center;
