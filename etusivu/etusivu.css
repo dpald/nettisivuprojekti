@@ -13,7 +13,8 @@ body {
     border-radius: 15px;
 }
 .tietoaMeistä {
-    columns: 3;
+    width: 450px;
+    margin: auto;
     padding: 40px 60px;
     text-align: center;
 }
