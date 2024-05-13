@@ -18,6 +18,8 @@ body {
     padding: 40px 60px;
 }
 footer {
+    display: grid;
+    grid-template-columns: 3;
     padding: 100px;
     width: 100%;
     background-color: hsl(0, 0%, 70%);
