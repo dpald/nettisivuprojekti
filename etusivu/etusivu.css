@@ -10,9 +10,9 @@ body {
     text-align: center;
 }
 footer {
-    padding: 250px;
+    padding: 100px;
     width: 100%;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background-color: hsl(0, 0%, 70%);
 }
