@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
 }
 .aukioloAjat {
+    justify-items: center;
     margin: auto;
     width: 300px;
     height: 340px;
@@ -12,6 +13,7 @@ body {
     border-radius: 15px;
 }
 .tietoaMeistä {
+    grid-template-columns: auto auto auto;
     padding: 40px 60px;
     text-align: center;
 }
