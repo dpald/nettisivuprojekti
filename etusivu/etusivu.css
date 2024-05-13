@@ -24,7 +24,7 @@ footer {
     width: 100%;
     background-color: hsl(0, 0%, 70%);
 }
-.footerLogo {
+.kartta {
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
