@@ -12,4 +12,4 @@
                 document.getElementById(menuName).style.display = "block";
                 evt.currentTarget.firstElementChild.className += " w3-red";
               }
-              document.getElementById("myLink").click();
+            //   document.getElementById("myLink").click();
