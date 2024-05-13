@@ -4,9 +4,11 @@ body {
     font-family: sans-serif;
 }
 .aukioloAjat {
+    size: 175px 250px;
     padding: 40px 60px;
-    background-color: hsl(0, 0%, 40%);
+    background-color: hsl(0, 0%, 70%);
     text-align: center;
+    border-radius: 15px;
 }
 .tietoaMeistä {
     padding: 40px 60px;
