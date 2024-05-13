@@ -18,9 +18,15 @@ body {
     padding: 40px 60px;
 }
 footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
     padding: 100px;
     width: 100%;
     background-color: hsl(0, 0%, 70%);
+}
+.footerLogo {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 4;
 }
