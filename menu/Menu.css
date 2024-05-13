@@ -1,0 +1,23 @@
+section {
+    background-image: url(../takeaway/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.otsikko {
+    display:inline;
+    background-color:rgba(0, 0, 0, 0.5);
+    color:#fff;
+}
+nav {
+    font-size: 1.2em;    
+}
+.lead {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline;
+}
+.logo {
+    height: 75px;
+    width: 200px;
+    
+}
