@@ -27,8 +27,8 @@ footer {
     background-color: hsl(0, 0%, 60%);
 }
 .footerlogo {
-    width: 75px;
-    height: 30px;
+    width: 175px;
+    height: 75px;
     grid-column: 2;
     grid-row: 2;
 }
