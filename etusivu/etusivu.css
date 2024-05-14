@@ -35,5 +35,5 @@ footer {
 }
 .kartta {
     grid-column: 4 / 5;
-    grid-row: 2 / 3;
+    grid-row: 2;
 }
