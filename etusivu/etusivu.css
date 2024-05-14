@@ -23,7 +23,7 @@ footer {
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     width: 100%;
-    background-color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 60%);
 }
 .footterLogo {
     grid-column: 3;
