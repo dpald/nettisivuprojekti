@@ -3,11 +3,11 @@ body {
     height: 100vh;
     overflow-x: hidden;
 }
-*{
+/* *{
     margin: 0;
     padding: 0; 
-   
 }
+*/
 #taso1 {
     background-image: url(../takeaway/bg.png);
     background-repeat: no-repeat;
@@ -18,9 +18,7 @@ body {
     background-color:rgba(0, 0, 0, 0.5);
     color:#fff;
 }
-nav {
-    font-size: 1.2em;    
-}
+
 .lead {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
@@ -31,4 +29,3 @@ nav {
     width: 200px;
     
 }
-
