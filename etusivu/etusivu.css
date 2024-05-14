@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-.aukioloAjat {
+.aukioloajat {
     justify-items: center;
     margin: auto;
     width: 300px;
@@ -11,7 +11,7 @@ body {
     background-color: hsl(0, 0%, 70%);
     border-radius: 15px;
 }
-.tietoaMeistä {
+.tietoameistä {
     width: 60%;
     margin: auto;
     padding: 40px 60px;
@@ -24,11 +24,11 @@ footer {
     width: 100%;
     background-color: hsl(0, 0%, 70%);
 }
-.footterLogo {
+.footterlogo {
     grid-column: 2;
     grid-row: 1;
 }
-.YhteystietoContainer {
+.Yhteystietocontainer {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
 }
