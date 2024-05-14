@@ -27,7 +27,7 @@ footer {
 }
 .footterLogo {
     grid-column: 3;
-    grid-row: 1;
+    grid-row: 2;
 }
 .YhteystietoContainer {
     grid-column: 3 / 4;
