@@ -34,6 +34,6 @@ footer {
     grid-row: 2 / 3;
 }
 .kartta {
-    grid-column: 1 / 4;
-    grid-row: 4 / 6;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
 }
