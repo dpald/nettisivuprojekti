@@ -27,13 +27,13 @@ footer {
 }
 .footterLogo {
     grid-column: 3;
-    grid-row: 2;
+    grid-row: 3;
 }
 .YhteystietoContainer {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
 }
 .kartta {
-    grid-column: 1 / 4;
+    grid-column: 1 / 3;
     grid-row: 4 / 6;
 }
