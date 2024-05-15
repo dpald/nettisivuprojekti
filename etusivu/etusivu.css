@@ -34,7 +34,10 @@ body {
     padding: 40px 60px;
 }
 /* css for footer*/
-footer {
+@media only screen and (max-width: 600px) {
+    
+}
+.footercontainer {
     color: rgb(0, 0, 0);
     display: grid;
     grid-template-columns: repeat(8, 1fr);
@@ -70,14 +73,12 @@ footer {
     width: 100%;
     height: 60px;
     grid-row: 5;
-    grid-column: 1 / 9;
+    grid-column: 3 / 4;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
     width: 100%;
     height: 80px;
-    grid-row: 1;
-    grid-column: 1 / 9;
 }
 .sijainti {
     padding-bottom: 5px;
