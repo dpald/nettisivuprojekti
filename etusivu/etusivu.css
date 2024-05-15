@@ -3,6 +3,22 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+#taso1{
+    background-image: url(../menu/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.otsikko {
+    display: inline;
+    background-color:rgba(0, 0, 0, 0.5);
+    color:#fff;
+}
+
+.lead {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: inline;
+}
 .aukioloajat {
     justify-items: center;
     margin: auto;
