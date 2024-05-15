@@ -63,7 +63,7 @@ footer {
 }
 .footerbottom {
     text-align: center;
-    align-items: center;
+    justify-content: center;
     color: white;
     background-color: #340000;
     width: 100%;
