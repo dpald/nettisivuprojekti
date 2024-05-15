@@ -34,12 +34,16 @@ body {
     padding: 40px 60px;
 }
 footer {
+    color: white;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     width: 100%;
-    background-color: hsl(0, 0%, 60%);
+    background-color: hsl(0, 0%, 13%);
+}
+footer h4 {
+    color: rgb(75, 75, 75);
 }
 .footerlogo {
     width: 250px;
@@ -64,8 +68,7 @@ footer {
 .footerbottom {
     text-align: center;
     justify-content: center;
-    color: white;
-    background-color: #340000;
+    color: rgb(75, 75, 75);
     width: 100%;
     height: 60px;
     grid-row: 7;
