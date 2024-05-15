@@ -73,7 +73,7 @@ body {
     width: 100%;
     height: 60px;
     grid-row: 5;
-    grid-column: 3 / 4;
+    grid-column: 4 / 5;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
