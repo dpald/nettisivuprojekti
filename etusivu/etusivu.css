@@ -34,7 +34,6 @@ body {
     padding: 40px 60px;
 }
 footer {
-    padding-bottom: 200px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     gap: 10px;
@@ -63,12 +62,12 @@ footer {
 
 }
 .footerbottom {
-    justify-content: center;
+    text-align: center;
     align-items: center;
     color: white;
     background-color: #340000;
     width: 100%;
     height: 60px;
-    grid-row: 4;
+    grid-row: 7;
     grid-column: 1 / 9;
 }
