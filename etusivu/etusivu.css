@@ -78,3 +78,6 @@ footer {
     grid-row: 1;
     grid-column: 1 / 9;
 }
+.sijainti {
+    padding-bottom: 5px;
+}
