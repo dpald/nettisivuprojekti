@@ -36,8 +36,9 @@ body {
 /* css for footer*/
 @media only screen and (max-width: 600px) {
     .footercontainer {
-        display: block;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: center;
     }
 }
