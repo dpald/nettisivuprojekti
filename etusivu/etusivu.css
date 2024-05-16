@@ -57,6 +57,8 @@ body {
     .footercontainer {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
     }
     .Yhteystietocontainer {
         grid-column: 5 / 7;
