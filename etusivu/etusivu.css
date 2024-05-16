@@ -89,12 +89,14 @@ body {
     }
 }
 .footerbottom {
+    display: grid;
+    place-items: center;
     color: rgb(0, 0, 0);
     width: 100%;
     height: 75px;
 }
 .footerbottom-teksti {
-    text-align: center;
+    margin: auto;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
