@@ -54,9 +54,6 @@ body {
     }
 }
 @media only screen and (max-width: 1180px) {
-    .footercontainer {
-        
-    }
     .Yhteystietocontainer {
         grid-column: 4 / 6;
         grid-row: 2;
@@ -64,6 +61,7 @@ body {
     .kartta {
         grid-column: 2 / 9;
         grid-row: 3 / 9;
+    }
 }
 .footerlogo {
     width: 250px;
