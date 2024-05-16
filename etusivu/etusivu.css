@@ -90,10 +90,11 @@ body {
 }
 .footerbottom {
     text-align: center;
+    align-items: center;
     justify-content: center;
     color: rgb(0, 0, 0);
     width: 100%;
-    height: 60px;
+    height: 90px;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
