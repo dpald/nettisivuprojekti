@@ -64,19 +64,16 @@ body {
 
 }
 @media only screen and (max-width: 1180px) {
-    /*.footercontainer {
-        display: grid;
-        grid-template-columns: repeat(10, 1fr);
-        gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-
-    }*/
+    .footercontainer {
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 40px;
+    }
     .Yhteystietocontainer {
-        grid-column: 5 / 7;
+        grid-column: 5 / 8;
         grid-row: 2;
     }
     .kartta {
-        grid-column: 2 / 9;
+        grid-column: 2 / 7;
         grid-row: 3 / 9;
     }
 }
