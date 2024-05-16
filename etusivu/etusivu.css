@@ -54,6 +54,10 @@ body {
     }
 }
 @media only screen and (max-width: 1180px) {
+    .footercontainer {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+    }
     .Yhteystietocontainer {
         grid-column: 5 / 7;
         grid-row: 2;
