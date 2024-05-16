@@ -91,12 +91,10 @@ body {
 .footerbottom {
     display: grid;
     place-items: center;
+    align-items: center;
     color: rgb(0, 0, 0);
     width: 100%;
-    height: 75px;
-}
-.footerbottom-teksti {
-    margin: auto;
+    height: 80px;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
