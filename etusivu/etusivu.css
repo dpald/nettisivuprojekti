@@ -37,13 +37,13 @@ body {
 .footercontainer {
     color: rgb(0, 0, 0);
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(11, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     width: 100%;
     background-color: hsl(0, 0%, 100%);
 }
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 600px) {
     .footercontainer {
         display: flex;
         flex-wrap: wrap;
@@ -52,6 +52,9 @@ body {
         row-gap: 30px;
         padding: 40px;
     }
+}
+@media only screen and (max-width: 1000px) {
+
 }
 .footerlogo {
     width: 250px;
