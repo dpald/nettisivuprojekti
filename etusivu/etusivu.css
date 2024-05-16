@@ -34,14 +34,6 @@ body {
     padding: 40px 60px;
 }
 /* css for footer*/
-@media only screen and (max-width: 600px) {
-    .footercontainer {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-    }
-}
 .footercontainer {
     color: rgb(0, 0, 0);
     display: grid;
@@ -50,6 +42,14 @@ body {
     grid-auto-rows: minmax(100px, auto);
     width: 100%;
     background-color: hsl(0, 0%, 100%);
+}
+@media only screen and (max-width: 600px) {
+    .footercontainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
 .footerlogo {
     width: 250px;
