@@ -18,6 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HengFeng</title>
+    <script src="java.js"></script>
 </head>
 <body>
     <!-- NAVIGAATIO NETIN YLÄSIVULLE -->
@@ -64,31 +65,95 @@
             </div>
           </section>
           <!-- SECTION LOPPUU TÄHÄN -->
+
+          <!-- KUVAT JA POPUP "MENULLE" -->
           <section class="container text-center">
             <div class="row">
-              <div class="col-md-6">
-                <h2>Alkuruoat</h2>
-                <p class="lead"></p>
-                <a href=""><img src="./alkuruoka.jpg" alt="calendar iconi" class="w-50 "></a>
-              </div>
-              <div class="col-md-6">
-                <h2>Merenantimet</h2>
-                <p class="lead"></p>
-                <a href="#"><img src="./seafood.jpg" alt="list iconi" class="w-50"></a>
-              </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko">Alkuruoat</h2>
+                    <p class="lead"></p>
+                    <img id="alkuruokaImg" src="./firstfood.png" alt="Alkuruoat" class="myImg w-50">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko">Merenantimet</h2>
+                    <p class="lead"></p>
+                    <img id="seafoodImg" src="./fishantimet.png" alt="Merenantimet" class="myImg w-50">
+                </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
-                <h2>Kanaruoat</h2>
-                <p class="lead"></p>
-                <a href="#"><img src="./kana.jpg" alt="note iconi" class="w-50 "></a>
-              </div>
-              <div class="col-md-6">
-                <h2>Naudanruoat</h2>
-                <p class="lead"></p>
-                <a href="#"><img src="./pihvi.jpg" alt="chat iconi" class="w-50 "></a>
-              </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko">Kanaruoat</h2>
+                    <p class="lead"></p>
+                    <img id="kanaImg" src="./chicken.png" alt="Kanaruoat" class="myImg w-50">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko">Naudanruoat</h2>
+                    <p class="lead"></p>
+                    <img id="pihviImg" src="./cow.png" alt="Naudanruoat" class="myImg w-50">
+                </div>
             </div>
+        </section>
+        
+        <div id="popup1" class="popup">
+            <span class="close">&times;</span>
+            <ul class="menu-list">
+                <li class="menu-item">Caprese - 8€</li>
+                <li class="menu-item">Caesar Salaatti - 10€</li>
+                <li class="menu-item">Bruschetta - 7€</li>
+                <li class="menu-item">Mozzarella Sticks - 6€</li>
+            </ul>
+        </div>
+        
+        <div id="popup2" class="popup">
+            <span class="close">&times;</span>
+            <ul class="menu-list">
+              <li class="menu-item">Caprese - 8€</li>
+              <li class="menu-item">Caesar Salaatti - 10€</li>
+              <li class="menu-item">Bruschetta - 7€</li>
+              <li class="menu-item">Mozzarella Sticks - 6€</li>
+            </ul>
+        </div>
+        <div id="popup3" class="popup">
+          <span class="close">&times;</span>
+          <ul class="menu-list">
+            <li class="menu-item">Caprese - 8€</li>
+            <li class="menu-item">Caesar Salaatti - 10€</li>
+            <li class="menu-item">Bruschetta - 7€</li>
+            <li class="menu-item">Mozzarella Sticks - 6€</li>
+          </ul>
+      </div>
+      <div id="popup4" class="popup">
+        <span class="close">&times;</span>
+        <ul class="menu-list">
+          <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+          <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+          <li class="menu-item">Naudan kivekset - 7€</li>
+          <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+        </ul>
+    </div>
+    <!-- SECTION MENULLE LOPPUU -->
+        
+        <!-- SCRIPTI POPUPEILLE -->
+        <script>
+            const popups = document.querySelectorAll('.popup');
+            const closeButtons = document.querySelectorAll('.close');
+            const images = document.querySelectorAll('.myImg');
+        
+            images.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    popups[index].style.display = 'block';
+                });
+            });
+        
+            closeButtons.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    btn.parentElement.style.display = 'none';
+                });
+            });
+        </script>
+      <!-- SCRIPTI POPUPEILLE LOPPUU -->
+
+
 
           <!-- FOOTERI ALKAA TÄSTÄ -->
 <footer class="footer">
