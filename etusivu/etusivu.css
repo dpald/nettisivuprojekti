@@ -43,6 +43,26 @@ body {
     width: 100%;
     background-color: hsl(0, 0%, 100%);
 }
+.footerlogo {
+    width: 250px;
+    height: 75px;
+    grid-column: 2;
+    grid-row: 2;
+}
+.Yhteystietocontainer {
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+.kartta {
+    grid-column: 7 / 10;
+    grid-row: 2;
+}
+.ravintolakuva {
+    width: 100%;
+    padding-bottom: 175px;
+    padding-top: 175px;
+
+}
 @media only screen and (max-width: 1180px) {
     .footercontainer {
         display: grid;
@@ -68,26 +88,6 @@ body {
         row-gap: 30px;
         padding: 40px;
     }
-}
-.footerlogo {
-    width: 250px;
-    height: 75px;
-    grid-column: 2;
-    grid-row: 2;
-}
-.Yhteystietocontainer {
-    grid-column: 4 / 6;
-    grid-row: 2;
-}
-.kartta {
-    grid-column: 7 / 10;
-    grid-row: 2;
-}
-.ravintolakuva {
-    width: 100%;
-    padding-bottom: 175px;
-    padding-top: 175px;
-
 }
 .footerbottom {
     text-align: center;
