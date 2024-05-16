@@ -101,6 +101,9 @@ body {
     width: 100%;
     height: 80px;
 }
+.footterbottom-teksti {
+    text-align: center;
+}
 .sijainti {
     padding-bottom: 5px;
 }
