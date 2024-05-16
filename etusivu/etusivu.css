@@ -63,11 +63,11 @@ body {
     grid-row: 2;
 }
 .Yhteystietocontainer {
-    grid-column: 5 / 7;
+    grid-column: 4 / 6;
     grid-row: 2;
 }
 .kartta {
-    grid-column: 8 / 11;
+    grid-column: 7 / 10;
     grid-row: 2;
 }
 .ravintolakuva {
@@ -83,7 +83,7 @@ body {
     width: 100%;
     height: 60px;
     grid-row: 4;
-    grid-column: 1 / 12;
+    grid-column: 1 / 11;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
