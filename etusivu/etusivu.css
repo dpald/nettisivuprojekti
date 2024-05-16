@@ -33,7 +33,14 @@ body {
     margin: auto;
     padding: 40px 60px;
 }
+.ravintolakuva {
+    width: 100%;
+    padding-bottom: 175px;
+    padding-top: 175px;
+}
+
 /* css for footer*/
+
 .footercontainer {
     color: rgb(0, 0, 0);
     display: grid;
@@ -56,12 +63,6 @@ body {
 .kartta {
     grid-column: 7 / 10;
     grid-row: 2;
-}
-.ravintolakuva {
-    width: 100%;
-    padding-bottom: 175px;
-    padding-top: 175px;
-
 }
 @media only screen and (max-width: 1180px) {
     .footercontainer {
@@ -93,8 +94,6 @@ body {
     color: rgb(0, 0, 0);
     width: 100%;
     height: 60px;
-    grid-row: 4;
-    grid-column: 1 / 11;
 }
 .footertop {
     background-color: rgb(20, 20, 20);
