@@ -83,8 +83,8 @@ body {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-        row-gap: 55px;
-        padding: 40px;
+        row-gap: 65px;
+        padding: 75px;
     }
 }
 .footerbottom {
