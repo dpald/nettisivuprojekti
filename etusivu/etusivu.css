@@ -55,7 +55,7 @@ body {
 }
 @media only screen and (max-width: 1180px) {
     .Yhteystietocontainer {
-        grid-column: 4 / 6;
+        grid-column: 5 / 7;
         grid-row: 2;
     }
     .kartta {
