@@ -19,14 +19,24 @@ body {
     color: #fff;
     display: inline;
 }
+/* .aukioloajat-container{
+    
+} */
 .aukioloajat {
-    justify-items: center;
-    margin: auto;
-    width: 300px;
-    height: 340px;
+    line-height: 4.2;
+    font-size: 1.2rem;
+    margin: 145px auto;
+    color: #fff;
+    width: 475px;
+    height: 550px;
     padding: 40px 60px;
-    background-color: hsl(0, 0%, 70%);
-    border-radius: 15px;
+    background-color: rgb(40, 31, 31);
+    border-radius: 17px;
+}
+.ajat li{
+    list-style-type: none;
+    margin: auto;
+    border-bottom: solid 2px rgb(74, 74, 74);
 }
 .tietoameistä {
     width: 60%;
@@ -34,13 +44,12 @@ body {
 }
 .ravintolakuva {
     width: 100%;
-    padding-bottom: 175px;
-    padding-top: 175px;
+    margin: 96px 0;
 }
 
 /* css for footer*/
-.footer {
-    background-color: rgb(40, 31, 32);
+footer {
+    background-color: rgb(40, 31, 31);
 }
 .footercontainer {
     color: rgb(255, 255, 255);
