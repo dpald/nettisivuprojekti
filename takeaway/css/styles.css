@@ -5,7 +5,7 @@ body {
 }
 
 #taso1 {
-    background-image: url(../takeaway/bg.png);
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -33,6 +33,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
 }
+
 
 .popup {
     display: none;
