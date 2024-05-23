@@ -1,15 +1,19 @@
-body{
+body {
+    width: 100%;
+    height: 100vh;
     overflow-x: hidden;
 }
-#taso1{
-    background-image: url(../menu/bg.png);
+
+#taso1 {
+    background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .otsikko {
     display: inline;
-    background-color:rgba(0, 0, 0, 0.5);
-    color:#fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
 }
 
 .lead {
@@ -17,6 +21,20 @@ body{
     color: #fff;
     display: inline;
 }
+
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
+.popup-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
 .popup {
     display: none;
     position: fixed;

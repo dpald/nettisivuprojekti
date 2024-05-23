@@ -4,10 +4,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://kit.fontawesome.com/c3f68f9501.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c3f68f-751.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/6cbe6461d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="../takeaway/styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>TakeAway</title>
     <link rel="icon" type="#" href="#">
     <link rel="script" href="java.js">
@@ -18,11 +18,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HengFeng</title>
+    <script src="../js/java.js"></script>
 </head>
 <body>
     <!-- NAVIGAATIO NETIN YLÄSIVULLE -->
     <nav  class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="../etusivu/etusivu.html"><img src="../takeaway/logo.png" width="250px" height="75px" alt="logo"></a>
+        <a class="navbar-brand" href="../etusivu/etusivu.html"><img src="./img/logo.png" width="-75px" height="75px" alt="logo"></a>
           <button 
           type="button"
           class="navbar-toggler"
@@ -64,42 +65,189 @@
             </div>
           </section>
           <!-- SECTION LOPPUU TÄHÄN -->
-         
+
+          <!-- KUVAT JA POPUP "MENULLE" -->
           <section class="container text-center">
             <div class="row">
-              <div class="col-md-6">
-                <h2>Alkuruoat</h2>
-                <p class="lead"></p>
-                <a href="alkuruoka.html"><img src="./alkruoka.png" alt="calendar iconi" class="w-30 rounded-circle"></a>
-              </div>
-              <div class="col-md-6">
-                <h2>Merenantimet</h2>
-                <p class="lead"></p>
-                <a href="https://i.imgflip.com/5686qx.png"><img src="../img/list.png" alt="list iconi" class="w-50 rounded-circle"></a>
-              </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko"></h2>
+                    <p class="lead"></p>
+                    <img id="alkuruokaImg" src="./img/firstfood.png  " alt="Alkuruoat" class="myImg w-75">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko"></h2>
+                    <p class="lead"></p>
+                    <img id="seafoodImg" src="./img/fishantimet.png" alt="Merenantimet" class="myImg w-75">
+                </div>
             </div>
             <div class="row">
-              <div class="col-md-6">
-                <h2>Kanaruoat</h2>
-                <p class="lead"></p>
-                <a href="https://notepad.link/SnzEu"><img src="../img/note.png" alt="note iconi" class="w-50 rounded-circle"></a>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko"></h2>
+                    <p class="lead"></p>
+                    <img id="kanaImg" src="./img/chicken.png" alt="Kanaruoat" class="myImg w-75">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="ruokaotsikko"></h2>
+                    <p class="lead"></p>
+                    <img id="pihviImg" src="./img/cow.png" alt="nauta" class="myImg w-75">
+                </div>
+                <div class="col-md-6">
+                  <h2 class="ruokaotsikko"></h2>
+                  <p class="lead"></p>
+                  <img id="duckImg" src="./img/duckfood.png" alt="Ankkaruoat" class="myImg w-75">
               </div>
               <div class="col-md-6">
-                <h2>Naudanruoat</h2>
+                <h2 class="ruokaotsikko"></h2>
                 <p class="lead"></p>
-                <a href="https://www.yeschat.ai/ar/gpts-9t557Mw30br-Rude-Person-2-0"><img src="../img/chat.png" alt="chat iconi" class="w-50 rounded-circle"></a>
-              </div>
+                <img id="beefImg" src="./img/hogrider pig.png" alt="possu" class="myImg w-75">
             </div>
+            <div class="col-md-6">
+              <h2 class="ruokaotsikko"></h2>
+              <p class="lead"></p>
+              <img id="lammasImg" src="./img/sheepruoka.png" alt="lamams" class="myImg w-75">
+          </div>
+          <div class="col-md-6">
+            <h2 class="ruokaotsikko"></h2>
+            <p class="lead"></p>
+            <img id="noodlesImg" src="./img/mamanoodles.png" alt="riisi" class="myImg w-75">
+        </div>
+        <div class="col-md-6">
+          <h2 class="ruokaotsikko"></h2>
+          <p class="lead"></p>
+          <img id="erikoisImg" src="./img/erikoisruoka.png" alt="erikois" class="myImg w-75">
+      </div>
+      <div class="col-md-6">
+        <h2 class="ruokaotsikko"></h2>
+        <p class="lead"></p>
+        <img id="veganImg" src="./img/vegan.png" alt="kasvis" class="myImg w-75">
+    </div>
+            </div>
+        </section>
+        
+        <div id="popup1" class="popup">
+            <span class="close">&times;</span>
+            <ul class="menu-list">
+                <li class="menu-item">Caprese - 8€</li>
+                <li class="menu-item">Caesar Salaatti - 10€</li>
+                <li class="menu-item">Bruschetta - 7€</li>
+                <li class="menu-item">Mozzarella Sticks - 6€</li>
+            </ul>
+        </div>
+        
+        <div id="popup2" class="popup">
+            <span class="close">&times;</span>
+            <ul class="menu-list">
+              <li class="menu-item">Caprese - 8€</li>
+              <li class="menu-item">Caesar Salaatti - 10€</li>
+              <li class="menu-item">Bruschetta - 7€</li>
+              <li class="menu-item">Mozzarella Sticks - 6€</li>
+            </ul>
+        </div>
+        <div id="popup3" class="popup">
+          <span class="close">&times;</span>
+          <ul class="menu-list">
+            <li class="menu-item">Caprese - 8€</li>
+            <li class="menu-item">Caesar Salaatti - 10€</li>
+            <li class="menu-item">Bruschetta - 7€</li>
+            <li class="menu-item">Mozzarella Sticks - 6€</li>
+          </ul>
+      </div>
+      <div id="popup4" class="popup">
+        <span class="close">&times;</span>
+        <ul class="menu-list">
+          <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+          <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+          <li class="menu-item">Naudan kivekset - 7€</li>
+          <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+        </ul>
+    </div>
+    <div id="popup5" class="popup">
+      <span class="close">&times;</span>
+      <ul class="menu-list">
+        <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+        <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+        <li class="menu-item">Naudan kivekset - 7€</li>
+        <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+      </ul>
+  </div>
+  <div id="popup6" class="popup">
+    <span class="close">&times;</span>
+    <ul class="menu-list">
+      <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+      <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+      <li class="menu-item">Naudan kivekset - 7€</li>
+      <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+    </ul>
+</div>
+<div id="popup7" class="popup">
+  <span class="close">&times;</span>
+  <ul class="menu-list">
+    <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+    <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+    <li class="menu-item">Naudan kivekset - 7€</li>
+    <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+  </ul>
+</div>
+<div id="popup8" class="popup">
+  <span class="close">&times;</span>
+  <ul class="menu-list">
+    <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+    <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+    <li class="menu-item">Naudan kivekset - 7€</li>
+    <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+  </ul>
+</div>
+<div id="popup9" class="popup">
+  <span class="close">&times;</span>
+  <ul class="menu-list">
+    <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+    <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+    <li class="menu-item">Naudan kivekset - 7€</li>
+    <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+  </ul>
+</div>
+<div id="popup10" class="popup">
+  <span class="close">&times;</span>
+  <ul class="menu-list">
+    <li class="menu-item">Utareet puolikypsänä, sieniliemellä - 18€</li>
+    <li class="menu-item">Silmäpussit soijakastikkeessa - 10€</li>
+    <li class="menu-item">Naudan kivekset - 7€</li>
+    <li class="menu-item">Naudan lihamörkäle 5kg - 45€</li>
+  </ul>
+</div>
+    <!-- SECTION MENULLE LOPPUU -->
+        
+        <!-- SCRIPTI POPUPEILLE -->
+        <script>
+            const popups = document.querySelectorAll('.popup');
+            const closeButtons = document.querySelectorAll('.close');
+            const images = document.querySelectorAll('.myImg');
+        
+            images.forEach((img, index) => {
+                img.addEventListener('click', () => {
+                    popups[index].style.display = 'block';
+                });
+            });
+        
+            closeButtons.forEach((btn) => {
+                btn.addEventListener('click', () => {
+                    btn.parentElement.style.display = 'none';
+                });
+            });
+        </script>
+      <!-- SCRIPTI POPUPEILLE LOPPUU -->
+
+
 
           <!-- FOOTERI ALKAA TÄSTÄ -->
 <footer class="footer">
     <section class="bg-light py-4 py-md-5 py-xl-8 border-top border-light">
-      <div class="container overflow-hidden">
+      <div class="container overflow-hidden"> 
         <div class="row gy-4 gy-lg-0 justify-content-xl-between">
           <div class="col-12 col-md-4 col-lg-3 col-xl-2">
             <div class="widget">
               <a href="#!">
-                <img src="./logo.png" alt="hengfeng logo" width="175" height="57">
+                <img src="./img/logo.png" alt="hengfeng logo" width="175" height="57">
               </a>
               <i> <br>HengFeng ;&copy;</i>
             </div>
@@ -118,7 +266,7 @@
           <div class="col-12 col-lg-3 col-xl-4">
             <div class="widget">
               <h4 class="widget-title mb-4">Missä sijaitsemme?</h4>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.7513523050159!2d24.323749377408568!3d60.33369913022454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468de9bd9ba76465%3A0x644db65d9693b103!2sTuusantie%203%2C%2003100%20Nummela!5e0!3m2!1sfi!2sfi!4v1715593049112!5m2!1sfi!2sfi" width="450 " height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1974.7513523-75159!2d24.323749377408568!3d60.33369913022454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468de9bd9ba76465%3A0x644db65d9693b103!2sTuusantie%203%2C%2003100%20Nummela!5e0!3m2!1sfi!2sfi!4v1715593049112!5m2!1sfi!2sfi" width="-75 " height="-75" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                   </div>
                 </div>
               </form>
