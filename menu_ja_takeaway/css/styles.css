@@ -2,12 +2,14 @@ body {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
+    font-family: sans-serif;
 }
 
 #taso1 {
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .otsikko {
@@ -51,7 +53,7 @@ body {
     padding: 20px;
     z-index: 9999;
     overflow-y: auto;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
 }
 
@@ -89,7 +91,18 @@ body {
     color: #C7AE6A;
     font-size: 1.3em; 
 }
- @media only screen and (max-width: 600px) { 
+.nav-link {
+    font-size: 3em;
+}
+.imgcontainer{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/hengfeng_ravintola.jpg);
+    background-attachment: fixed;
+}
+@media only screen and (max-width: 600px) { 
     iframe {
 
         width:325px;

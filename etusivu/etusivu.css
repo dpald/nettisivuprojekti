@@ -4,7 +4,7 @@ body {
     font-family: sans-serif;
 }
 #taso1{
-    background-image: url(../menu/bg.png);
+    background-image: url(../);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -19,36 +19,119 @@ body {
     color: #fff;
     display: inline;
 }
+.imgcontainer{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url("./etusivu_kuvat/hengfeng_ravintola.jpg");
+    background-attachment: fixed;
+}
+
+/*css aukioloajat */
+
 .aukioloajat {
-    justify-items: center;
-    margin: auto;
-    width: 300px;
-    height: 340px;
+    font-size: 1.2rem;
+    position: relative;
+    margin: 145px auto;
+    color: #fff;
+    width: 455px;
+    height: 510px;
     padding: 40px 60px;
-    background-color: hsl(0, 0%, 70%);
-    border-radius: 15px;
+    background-color: rgb(40, 31, 31);
+    border-radius: 21px;
+}
+.slider-container {
+    position: relative;
+    height: 100%;
+}
+.avoinna, .buffetti {
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+    padding-bottom: 24px;
+    text-align: center;
+    z-index: 2;
+    top: 30px;
+    border-bottom: rgb(56, 56, 56) solid 2px;
+}
+.avoinna {
+    top: 20%;
+}
+.buffetti {
+    top: 54%;
+}
+.navigaatio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    height: 100%;
+    width: 700%;
+    flex-shrink: 0;
+    transition: all 0.5s;
+}
+.slider section {
+    z-index: 1;
+    flex-basis: 14.28%;
+    width: 14.28%;
+    flex-shrink: 0;
+    flex: 1;
+}
+.karusellinnäkymä {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 40px;
+}
+.päivät {
+    grid-row: 1;
+}
+.kellonajat {
+    grid-row: 4;
+}
+.buffeiajat {
+    grid-row: 7;
+}
+.arrow {
+    z-index: 2;
+    color: #fff;
+    position: absolute;
+    top: 0.5px;
+    cursor: pointer;
+}
+.arrow:hover {
+    color: #ffffff96;
+}
+.arrow.prev {
+    left: 16px;
+}
+.arrow.next {
+    right: 16px;
 }
 .tietoameistä {
-    width: 60%;
+    width: 55%;
     margin: auto;
-    padding: 40px 60px;
+    margin-bottom: 95px;
 }
+
 /* css for footer*/
-@media only screen and (max-width: 600px) {
-    .footercontainer {
-        display: block;
-        justify-content: center;
-        align-items: center;
-    }
+
+footer {
+    background-color: rgb(40, 31, 31);
 }
 .footercontainer {
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(10, 1fr);
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
     width: 100%;
-    background-color: hsl(0, 0%, 100%);
 }
 .footerlogo {
     width: 250px;
@@ -57,32 +140,60 @@ body {
     grid-row: 2;
 }
 .Yhteystietocontainer {
-    grid-column: 4 / 5;
+    grid-column: 4 / 6;
     grid-row: 2;
 }
 .kartta {
-    grid-column: 6 / 8;
+    grid-column: 7 / 10;
     grid-row: 2;
 }
-.ravintolakuva {
-    width: 100%;
-    padding-bottom: 175px;
-    padding-top: 175px;
-
+@media only screen and (max-width: 1180px) {
+    .footercontainer {
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 40px;
+    }
+    .Yhteystietocontainer {
+        grid-column: 5 / 8;
+        grid-row: 2;
+    }
+    .kartta {
+        grid-column: 2 / 8;
+        grid-row: 3 / 5;
+    }
+    .imgcontainer{
+        height: 334px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footercontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 65px;
+        padding: 62px;
+    }
+    .imgcontainer{
+        height: 284px;
+    }
+    .aukioloajat {
+        height: 500px;
+        width: 74%;
+        padding: 40px 25px;
+    }
+    .tietoameistä {
+        font-size: 0.9rem;
+        width: 80%;
+    }
 }
 .footerbottom {
-    text-align: center;
-    justify-content: center;
-    color: rgb(0, 0, 0);
+    display: grid;
+    place-items: center;
+    align-items: center;
+    color: rgb(80, 80, 80);
     width: 100%;
-    height: 60px;
-    grid-row: 4;
-    grid-column: 1 / 9;
-}
-.footertop {
-    background-color: rgb(20, 20, 20);
-    width: 100%;
-    height: 80px;
+    height: 75px;
+    margin-top: 103px;
 }
 .sijainti {
     padding-bottom: 5px;
