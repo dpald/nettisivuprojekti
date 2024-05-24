@@ -110,3 +110,81 @@ body {
     }
 
 }
+/* css for footer*/
+
+footer {
+    background-color: rgb(40, 31, 31);
+}
+.footercontainer {
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 100%;
+}
+.footerlogo {
+    width: 250px;
+    height: 75px;
+    grid-column: 2;
+    grid-row: 2;
+}
+.Yhteystietocontainer {
+    grid-column: 4 / 6;
+    grid-row: 2;
+}
+.kartta {
+    grid-column: 7 / 10;
+    grid-row: 2;
+}
+@media only screen and (max-width: 1180px) {
+    .footercontainer {
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 40px;
+    }
+    .Yhteystietocontainer {
+        grid-column: 5 / 8;
+        grid-row: 2;
+    }
+    .kartta {
+        grid-column: 2 / 8;
+        grid-row: 3 / 5;
+    }
+    .imgcontainer{
+        height: 334px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .footercontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        row-gap: 65px;
+        padding: 62px;
+    }
+    .imgcontainer{
+        height: 284px;
+    }
+    .aukioloajat {
+        height: 500px;
+        width: 74%;
+        padding: 40px 25px;
+    }
+    .tietoameistä {
+        font-size: 0.9rem;
+        width: 80%;
+    }
+}
+.footerbottom {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    color: rgb(80, 80, 80);
+    width: 100%;
+    height: 75px;
+    margin-top: 103px;
+}
+.sijainti {
+    padding-bottom: 5px;
+}
