@@ -34,4 +34,4 @@ slider.addEventListener('transitionend', function() {
     setTimeout(function(){
         slider.style.transition = 'all 0.5s';
     });
-});
+}); 

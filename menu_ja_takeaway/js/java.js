@@ -1,4 +1,4 @@
-function openMenu(evt, menuName) {
+ function openMenu(evt, menuName) {
   var i, x, tablinks;
   x = document.getElementsByClassName("menu");
   for (i = 0; i < x.length; i++) {

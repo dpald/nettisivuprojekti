@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 #taso1{
-    background-image: url(../menu/bg.png);
+    background-image: url(../);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -27,7 +27,7 @@ body {
     height: 400px;
     background-position: center;
     background-size: cover;
-    background-image: url("etusivu_kuvat/hengfeng_ravintola.jpg");
+    background-image: url("./etusivu_kuvat/hengfeng_ravintola.jpg");
     background-attachment: fixed;
 }
 
