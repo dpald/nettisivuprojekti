@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
 }
 #taso1{
-    background-image: url(../);
+    background-image: url(../kuvat/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
